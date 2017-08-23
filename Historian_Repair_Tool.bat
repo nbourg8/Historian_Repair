@@ -13,9 +13,8 @@ echo.Tool Location: %~dp0 >>%LogFile% 2>&1
 echo.********************************************************>>%LogFile% 2>&1
 echo. |time |find "current" >>%LogFile% 2>&1
 echo. |date |find "current" >>%LogFile% 2>&1
-echo. >>%LogFile% 2>&1
 echo.>>%LogFile% 2>&1
-set /p daysback="Enter how many days to keep: "
+if "%1"=="" (set /p daysback="Enter how many days to keep: ") else (set daysback=%1)
 echo.
 echo.>>%LogFile% 2>&1
 echo.Cleaning Primary HMI Server 192.168.1.13...

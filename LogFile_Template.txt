@@ -1,0 +1,90 @@
+********************************************************
+		Historian Repair Tool
+Running from Maint Wkstn : Image version 2.0.1.0_C009
+********************************************************
+The current time is: 21:27:30.47
+The current date is: Tue 08/22/2017 
+
+Keeping PIBUFQ_* and PIMQ* Files Newer than 30 days old
+________________________________________________________
+192.168.1.13 - PRI HMI
+Starting FTLDint1
+Stopping Pibufss
+
+Deleting:
+FTLD1
+FTLD2
+FTLD3
+FTLD4
+FTLD5
+FTLD6
+
+Deleting:
+PIBUFQ_6
+PIBUFQ_7
+PIBUFQ_8
+PIBUFQ_9
+PIBUFQ_10
+PIBUFQ_11
+
+Moving to ..\pibufq_Backup:
+PIBUFQ_1
+PIBUFQ_2
+PIBUFQ_3
+PIBUFQ_4
+PIBUFQ_5
+________________________________________________________
+192.168.1.20 - Sec HMI
+Stopping FTLD
+Stopping Pibufss
+
+Deleting:
+FTLD1
+FTLD2
+FTLD3
+FTLD4
+FTLD5
+FTLD6
+
+Deleting:
+PIBUFQ_6
+PIBUFQ_7
+PIBUFQ_8
+PIBUFQ_9
+PIBUFQ_10
+PIBUFQ_11
+
+Moving to ..\pibufq_Backup:
+PIBUFQ_1
+PIBUFQ_2
+PIBUFQ_3
+PIBUFQ_4
+PIBUFQ_5
+________________________________________________________
+192.168.1.14 - Historian
+Killing all running Piartool.exe processes
+Stopping PI Archive
+Stopping PI Snapshot
+
+Deleting:
+pimq6
+pimq7
+pimq8
+pimq9
+pimq10
+
+Moving to ..\evq:
+pimq1
+pimq2
+pimq3
+pimq4
+pimq5
+
+Starting PI Snapshot
+Starting PI Archive
+________________________________________________________
+192.168.1.13 - PRI HMI
+Starting FTLDint1
+________________________________________________________
+192.168.1.20 - Sec HMI
+Starting FTLDint1
