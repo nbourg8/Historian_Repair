@@ -1,0 +1,10 @@
+********************************************************
+                 Historian Repair Tool
+Running from TEXAS : Image Version 2.0.1.0_C009
+********************************************************
+Current Time is: 10:04:57.05
+Current Date is: Sat 08/26/2017
+
+Keeping PIBUFQ_* and PIMQ* Files Newer than 30 days old
+________________________________________________________
+10.10.10.2 - HAWAII - image - Sat 08/26/2017 10:04:29.56

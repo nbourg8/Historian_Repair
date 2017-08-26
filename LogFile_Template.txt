@@ -62,7 +62,6 @@ PIBUFQ_4
 PIBUFQ_5
 ________________________________________________________
 192.168.1.14 - Historian
-Killing all running Piartool.exe processes
 Stopping PI Archive
 Stopping PI Snapshot
 
