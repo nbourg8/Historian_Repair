@@ -2,7 +2,7 @@
 if not "%username%"=="canrigadmin" or "%username%"=="CanrigAdmin" (goto failed_username)
 Title Repairing Historian
 color 2
-set LogFile=c:\Historian_Repair_Log.txt
+set LogFile=Historian_Repair_Log.txt
 
 for /f "tokens=3" %%a in ('reg query hkey_users\.default /v imageversion ^|findstr /ri "REG_SZ"') do (set image=%%a)
 echo.********************************************************>%LogFile%
