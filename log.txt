@@ -1,0 +1,67 @@
+********************************************************
+                 Historian Repair Tool
+Running from ASSETCENTRE : Image Version 2.0.0.0_C008
+********************************************************
+Current Time is :12:23:43.56
+Current Date is :Mon 09/04/2017
+
+Keeping PIBUFQ_* and PIMQ* Files Newer than 30 days old
+________________________________________________________
+192.168.1.13 - VIEWSE-PRI - 2.0.0.0_C008 - Mon 09/04/2017 12:23:48.48
+Stopping FTLDint1
+Stopping Pibufss
+
+Deleting:
+
+"FTLDInt_historian_ftld_1_dgcache.dat"
+"FTLDInt_historian_ftld_1_ptcache.dat"
+
+Deleting:
+
+Moving to ..\pibufq_Backup:
+
+"pibufq_historian.dat"
+________________________________________________________
+192.168.1.20 - VIEWSE-SEC - 2.0.0.0_C008 - Mon 09/04/2017 12:23:54.29
+Stopping FTLDint1
+Stopping Pibufss
+
+Deleting:
+
+"FTLDInt_historian_ftld_1_dgcache.dat"
+"FTLDInt_historian_ftld_1_ptcache.dat"
+
+Deleting:
+
+Moving to ..\pibufq_Backup:
+
+"pibufq_historian.dat"
+________________________________________________________
+192.168.1.14 - HISTORIAN - 2.0.0.0_C008 - Mon 09/04/2017 12:24:00.29
+Stopping piarchss
+Stopping pisnapss
+
+Deleting:
+
+Moving:
+
+"pimq0000.dat"
+
+Starting pisnapss
+Starting piarchss
+________________________________________________________
+192.168.1.13 - VIEWSE-PRI - 2.0.0.0_C008 - Mon 09/04/2017 12:24:08.78
+Starting FTLDint1
+Starting Pibufss
+
+________________________________________________________
+192.168.1.20 - VIEWSE-SEC - 2.0.0.0_C008 - Mon 09/04/2017 12:24:09.78
+Starting FTLDint1
+Starting Pibufss
+
+All Finished.
+********************************************************
+
+
+
+
