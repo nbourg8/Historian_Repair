@@ -1,9 +1,11 @@
 Historian Repair Tool Version 2.0.0.0
+
 ---------------------------------------------------------------------
 
 Requirements:
 	Image Versions 2.x.x.x or above
 	Run with Administrative credentials - e.g. CanrigAdmin
+	
 ---------------------------------------------------------------------
 Purpose:
 	This tool is used to quickly perform a 'historian repair'.
