@@ -1,6 +1,8 @@
 @echo off
 Title Repairing Historian
 color 2
+net use x: /delete /y
+cls
 set LogFile=log.txt
 
 for /f "tokens=3" %%a in ('reg query hkey_users\.default /v imageversion ^|findstr /ri "REG_SZ"') do (set image=%%a)
