@@ -1,0 +1,17 @@
+BigDog -> 1.7.1.2_c02 -> Windows Server 2003 r2
+1.13 & 1.20
+ftld1 not ftldint1
+FTLD* found in progra~1\rockwe~1\factor~2\server\pipc\interfaces
+pibufq* found in progra~1\rockwe~1\factor~2\server\pipc\dat
+1.14
+forfiles does not work
+pimq* found in progra~1\rockwe~1\factor~1\server\pi\dat
+-------------------------------------------------------------------------------------------
+
+B10 -> 2.0.1.1_C009 -> Windows Server 2008 r2
+1.13 & 1.20
+forfiles usage problems after PI buffer stopped
+
+X20 -> 2.0.0.0_C008 -> Windows Server 2008 r2
+1.13 & 1.20
+forfiles usage problems after PI buffer stopped
