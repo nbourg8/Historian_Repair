@@ -19,35 +19,35 @@ echo.Keeping PIBUFQ_* and PIMQ* Files Newer than %daysback% days old>>%LogFile%
 
 net use x: \\192.168.1.13\C$
 psexec \\192.168.1.13 -c -f resources\FTLD_Stop_and_Delete.bat %daysback%
-copy x:\HISTREP.txt %~dp0
+xcopy x:\HISTREP.txt /y
 copy /b %LogFile%+HISTREP.txt %LogFile%
 del x:\HISTREP.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.20\C$
 psexec \\192.168.1.20 -c -f resources\FTLD_Stop_and_Delete.bat %daysback%
-copy x:\HISTREP.txt %~dp0
+xcopy x:\HISTREP.txt /y
 copy /b %LogFile%+HISTREP.txt %LogFile%
 del x:\HISTREP.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.14\C$
 psexec \\192.168.1.14 -c -f resources\Buffer_Repair.bat %daysback%
-copy x:\HISTREP.txt %~dp0
+xcopy x:\HISTREP.txt /y
 copy /b %LogFile%+HISTREP.txt %LogFile%
 del x:\HISTREP.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.13\C$
 psexec \\192.168.1.13 -c -f resources\FTLD_Start.bat
-copy x:\HISTREP.txt %~dp0
+xcopy x:\HISTREP.txt /y
 copy /b %LogFile%+HISTREP.txt %LogFile%
 del x:\HISTREP.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.20\C$
 psexec \\192.168.1.20 -c -f resources\FTLD_Start.bat
-copy x:\HISTREP.txt %~dp0
+xcopy x:\HISTREP.txt /y
 copy /b %LogFile%+HISTREP.txt %LogFile%
 del x:\HISTREP.txt
 net use x: /delete /y
