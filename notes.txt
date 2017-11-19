@@ -34,3 +34,7 @@ to check for windows OS name:
 systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
 OS Name:                   Microsoft Windows 10 Enterprise
 OS Version:                10.0.14393 N/A Build 14393
+
+wmic os get Caption,CSDVersion /value
+Caption=Microsoft Windows 10 Enterprise
+CSDVersion=
