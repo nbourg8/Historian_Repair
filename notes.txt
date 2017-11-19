@@ -15,3 +15,22 @@ forfiles usage problems after PI buffer stopped
 X20 -> 2.0.0.0_C008 -> Windows Server 2008 r2
 1.13 & 1.20
 forfiles usage problems after PI buffer stopped
+
+-------------------------------------------------------------------------------------------
+forfiles Windows Server 2008 r2
+requires forfiles %days% instead of -%days%
+
+X38 -> 2.0.0.0_C008 -> Windows Server 2008 r2
+FTLD_Stop_and_Delete.bat
+if exist c:\progra~2\rockwe~1\factor~2\pipc\dat\pibufq_* (forfiles /p c:\progra~2\rockwe~1\factor~2\pipc\dat\ /m pibufq_* /d -%1% /c "cmd /c echo @file">>%LogFile%)
+for files invalid date
+next line -> no files found with specified criteria
+next line -> files of type pibufq_* not found.
+
+Buffer_Repair.bat
+same invalid date issue
+
+to check for windows OS name:
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
+OS Name:                   Microsoft Windows 10 Enterprise
+OS Version:                10.0.14393 N/A Build 14393
