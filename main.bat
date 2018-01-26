@@ -62,5 +62,5 @@ echo.>>%LogFile%
 echo.>>%LogFile%
 echo.>>%LogFile%
 echo.>>%LogFile%
-
+call log.txt
 pause
